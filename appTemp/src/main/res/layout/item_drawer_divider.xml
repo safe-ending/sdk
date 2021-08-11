@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--分割线-->
+<!--实线 ?android:attr/listDivider-->
+<!--虚线 @drawable/dash_line-->
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layerType="software"
+    android:background="@color/color_747474"
+    android:layout_marginLeft="22dp"
+    />

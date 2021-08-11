@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_title"
+            layout="@layout/tpl_top_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_setting_line_gray"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/color_000000"
+                android:text="@string/bangding"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/ble_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:textColor="#999999"
+                android:text="@string/ble_tips"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/app_setting_line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/color_000000"
+                android:text="@string/batt_info"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/battery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:textColor="#999999"
+                android:text="@string/ble_tips"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/app_setting_line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/color_000000"
+                android:text="@string/offline_data"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/tv_offline_data_clean"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:textColor="#999999"
+                android:text="@string/offline_data_clean"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/app_setting_line_gray" />
+
+        <LinearLayout
+            android:id="@+id/switch_sync_layout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/color_000000"
+                android:text="@string/str_sync"
+                android:textSize="@dimen/text_size_15" />
+
+            <Switch
+                android:id="@+id/switch_sync"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:switchMinWidth="40dp"
+                android:textOff=" "
+                android:textOn="  "
+                android:thumb="@drawable/selector_thumb"
+                android:track="@drawable/selector_track" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/app_setting_line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/color_000000"
+                android:text="@string/unbind"
+                android:textSize="@dimen/text_size_15" />
+
+            <Switch
+                android:id="@+id/switch_unbind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:switchMinWidth="40dp"
+                android:textOff=" "
+                android:textOn="  "
+                android:thumb="@drawable/selector_thumb"
+                android:track="@drawable/selector_track" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+
+            android:background="@color/app_setting_line_gray" />
+
+        <LinearLayout android:id="@+id/ll_report_log"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_000000"
+                android:text="@string/report_log"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView android:id="@+id/tv_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/green_009688"
+                android:text="@string/report"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

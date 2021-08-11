@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_title"
+            layout="@layout/tpl_top_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/app_back_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/connect_guide"
+            android:textColor="@color/app_login_text_black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/connect_guide1_image_width"
+            android:layout_height="@dimen/connect_guide1_image_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/connect_guide1_image_margin_top"
+            android:src="@drawable/p20_link_guide1" />
+
+        <Button
+            android:id="@+id/device_link_guide_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/connect_guide1_button_margin_top"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/click_bg_3"
+            android:text="@string/scan"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+    </LinearLayout>
+</layout>

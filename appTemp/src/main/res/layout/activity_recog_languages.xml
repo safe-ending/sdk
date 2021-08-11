@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back_gray"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_title"
+            layout="@layout/tpl_top_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_lang_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_title"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendar="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_title"
+            layout="@layout/tpl_top_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_setting_line_gray"
+            android:visibility="gone"/>
+
+        <com.eningqu.aipen.view.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            calendar:mCurrentBg="#01C0A2"
+            calendar:mCurrentBgStrokeWidth="1.5dip"
+            calendar:mLineSpac="6dip"
+
+            calendar:mMonthRowL="@drawable/ic_mark_left"
+            calendar:mMonthRowR="@drawable/ic_mark_right"
+            calendar:mMonthRowSpac="35dip"
+            calendar:mMonthSpac="15dip"
+
+            calendar:mSelectBg="#EFA025"
+            calendar:mSelectRadius="18dip"
+            calendar:mSelectTextColor="#ffffff"
+            calendar:mSelectWeekTextColor="@color/color_000000"
+            calendar:mTextColorDay="@color/color_000000"
+            calendar:mTextColorMonth="#01C0A2"
+            calendar:mTextColorPreFinish="#fc7451"
+            calendar:mTextColorPreNull="#cecdcd"
+
+            calendar:mTextColorPreUnFinish="#60ba8d"
+            calendar:mTextColorWeek="@color/color_000000"
+            calendar:mTextSizeDay="17sp"
+
+            calendar:mTextSizeMonth="20sp"
+            calendar:mTextSizePre="10sp"
+            calendar:mTextSizeWeek="17sp"
+            calendar:mTextSpac="4dip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/app_setting_line_gray" />
+
+        <LinearLayout
+            android:id="@+id/history_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/history_books"
+                android:drawablePadding="10dp"
+                android:text="@string/history_books"
+                android:textColor="@color/app_login_text_black"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/calendar_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

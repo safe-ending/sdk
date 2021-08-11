@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_get_data_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_000000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/item_get_data_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <com.eningqu.aipen.view.SimpleRoundProgress
+                    android:id="@+id/item_get_data_progress"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:focusable="false"
+                    app:srp_max="100"
+                    app:srp_progressColor="@color/migration_font_green"
+                    app:srp_progressWidth="2dip"
+                    app:srp_roundColor="@android:color/transparent"
+                    app:srp_roundWidth="3dip"
+                    app:srp_startAngle="270"
+                    app:srp_style="STROKE" />
+
+                <TextView
+                    android:id="@+id/item_get_data_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f3f3f3" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white_F5F5F5"
+    >
+    <TextView
+        android:id="@+id/tv_note_rename"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/color_0D7993"
+        android:text="@string/drawer_note_rename"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/color_0D7993"
+        />
+    <TextView
+        android:id="@+id/tv_note_delete"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="@dimen/text_size_16"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/color_0D7993"
+        android:text="@string/dialog_delete_text"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/color_859FA5"
+        />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="@dimen/text_size_16"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/color_859FA5"
+        android:text="@string/dialog_cancel_text"
+        />
+
+</LinearLayout>

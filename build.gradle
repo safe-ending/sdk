@@ -1,0 +1,64 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://www.jitpack.io" }
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.mob.sdk:MobSDK:2018.0319.1724'
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://www.jitpack.io" }
+        maven { url"http://localhost:8081/nexus/content/repositories/releases/" }
+
+    }
+}
+
+ext {
+    // configure versions used by dependencies to harmonize and update easily across all components
+
+    // Android SDK
+    compileSdkVersion = 28
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    // Android libraries
+    appcompatVersion = '1.0.2'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+repositories {
+    google()
+}
+
+String findBuildTools() {
+    def localProperties = new File(project.rootDir, "local.properties")
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream {
+            instr -> properties.load(instr)
+        }
+        def sdkDir = properties.getProperty('sdk.dir')
+        def buildTools = new File(sdkDir, "build-tools")
+        if (buildTools.exists()) {
+            def tools = buildTools.list()
+            if (tools != null) {
+                Arrays.sort(tools)
+                return tools[tools.length - 1]
+            }
+        }
+    }
+    return null
+}

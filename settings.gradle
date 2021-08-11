@@ -1,0 +1,8 @@
+rootProject.name = 'Qpen'
+include ':app'
+include(':sdk')
+//, ':smlibrary'
+project(':app').dir = new File(settingsDir, 'app')
+//project(':smlibrary').dir = new File(settingsDir, 'smlibrary')
+//include ':pensdk'
+//include ':myscript'

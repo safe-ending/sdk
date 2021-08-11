@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_search_black_bg"
+        android:orientation="horizontal"
+        android:onClick="onViewClick">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="33dp"
+            android:background="@drawable/shape_search_black_trans_bg"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/note_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:textColor="@color/color_000000"
+            android:textColorHint="#c5c5c5"
+            android:textSize="@dimen/text_size_14" />
+        <LinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_width="25dp"
+            android:layout_height="33dp"
+            android:layout_toRightOf="@id/et_name"
+            android:gravity="center"
+            android:onClick="onViewClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_del_normal" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

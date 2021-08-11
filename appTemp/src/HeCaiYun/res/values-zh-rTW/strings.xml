@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CaiYunSDK</string>
+    <string name="connect_guide">1.拔開筆帽智慧筆自動開機</string>
+    <string name="app_name_welcome">QPen智慧筆</string>
+
+    <string name="str_permission_title">為了給您帶來流暢的書寫體驗，QPen智能筆需要向您申請以下權限:</string>
+    <string name="str_linked_content">請先連接智能筆</string>
+
+    <string name="menu_title_mcloud">生成笔记</string>
+</resources>

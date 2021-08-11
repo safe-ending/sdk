@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/app_white_trans">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="178dp"
+        android:layout_height="268dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        />
+    <ImageView
+        android:id="@+id/iv_select_state"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"/>
+</FrameLayout>

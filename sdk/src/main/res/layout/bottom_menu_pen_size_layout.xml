@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/rl_root">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rect_white_bg"
+            android:orientation="horizontal">
+            <FrameLayout android:id="@+id/fl_pen_size_thin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:onClick="onViewClick"
+                android:background="@drawable/pen_size_bg_clk"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pen_size_thin"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/fl_pen_size_mid"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:onClick="onViewClick"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pen_size_mid"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/fl_pen_size_thick"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:onClick="onViewClick"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pen_size_thick"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/record_layout_bg"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_record_start"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9dp">
+
+            <TextView
+                android:id="@+id/tv_record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00"
+                android:textColor="#010101"
+                android:textSize="13dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_record_pause"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:onClick="onViewClick"
+            android:background="@drawable/shape_circle_red_bg">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_pause" />
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,565 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="navigation_drawer_open">侧滑菜单打开</string>
+    <string name="navigation_drawer_close">侧滑菜单关闭</string>
+
+    <string name="home_title">首页</string>
+
+    <string name="toolbar_menu_weixin_txt">微信</string>
+    <string name="toolbar_menu_qq_txt">QQ</string>
+
+    <!--login text-->
+    <string name="login_qq_text">QQ登录</string>
+    <string name="login_weixin_text">微信登录</string>
+    <string name="login_account_tips">手机号</string>
+    <string name="login_pwd_tips">密码</string>
+    <string name="login_account_error">手机号码错误</string>
+    <string name="login_pwd_error">密码错误</string>
+    <string name="other_login_tips">其他登录方式</string>
+
+    <!-- drawer menu text-->
+    <string name="drawer_home">笔记本</string>
+    <string name="drawer_note_sort">笔记分类</string>
+    <string name="drawer_note_collect">收藏柜</string>
+    <string name="drawer_search">查找</string>
+    <string name="drawer_ble_scan">蓝牙搜索</string>
+    <string name="drawer_setting">设置</string>
+    <string name="drawer_operating">用户指南</string>
+    <string name="drawer_cloud_backups">云备份</string>
+    <string name="drawer_logout">退出登录</string>
+    <string name="drawer_data_migration">数据传输</string>
+    <string name="str_send_data">发送数据</string>
+    <string name="str_get_data">接收数据</string>
+    <string name="str_data_null">你没有任何笔记本数据，不能传输</string>
+    <string name="str_migration_tips">发送端与接收端必须连接同一个WiFi</string>
+    <string name="str_scan_qr_code">扫描二维码</string>
+    <string name="str_scan_server_qr_code">扫描接收端二维码</string>
+    <string name="str_linking">正在连接..</string>
+    <string name="str_link_fail">连接不成功</string>
+    <string name="str_link_fail_tips">请确认是否与对方在同一局域网内</string>
+    <string name="str_all_select">全选</string>
+    <string name="str_send">发送</string>
+    <string name="str_send_tips">请确认发送的数据是否相同，相同的数据将会覆盖。</string>
+    <string name="str_send_list">数据传输列表</string>
+    <string name="str_send_error_tips">退至后台或离开此页面，所有数据将取消发送</string>
+    <string name="str_send_success">发送成功</string>
+    <string name="str_get_success">接收成功</string>
+    <string name="str_sending">发送中</string>
+    <string name="str_competed">已完成</string>
+    <string name="str_migration_version_error">传输版本不一致</string>
+    <string name="str_oher_version_error">对方版本较低，请先升级到最新版本</string>
+    <string name="str_mine_version_error">您的版本较低，请先升级到最新版本</string>
+    <string name="str_linked">已连接</string>
+    <string name="str_wait_data">等待数据传输...</string>
+    <string name="str_server_tips">请使用发送端扫描此二维码\n收发的手机必须连接同一个WiFi</string>
+    <string name="str_link_close">对方已断开传输连接</string>
+    <string name="str_wait">等待中</string>
+    <string name="str_geting_data">接收中</string>
+    <string name="str_zip_error">文件压缩发生错误。</string>
+    <string name="str_close_tips">退出页面后所有数据传输将会取消，请确认是否退出？</string>
+
+    <!--view title-->
+    <string name="title_my_note_collect">我的收藏柜</string>
+
+    <!-- dialog  &#8194;&#8194;-->
+    <string name="dialog_title">温馨提示</string>
+    <string name="dialog_tips_text">我知道啦</string>
+    <string name="dialog_confirm_text">确定</string>
+    <string name="dialog_cancel_text">取消</string>
+    <string name="dialog_delete_text">删除</string>
+    <string name="dialog_ignore_text">忽略</string>
+    <string name="dialog_receive_text">接收</string>
+    <string name="history_data_text">数据同步大概需要%1$s秒，请确认是否进行同步</string>
+    <string name="dialog_label_title">添加页签</string>
+    <string name="dialog_edit_tips">请输入标签名</string>
+    <string name="dialog_rename_tips">请输入笔记本名称</string>
+    <string name="drawer_note_rename">重命名</string>
+    <string name="rename_success">重命名成功</string>
+    <string name="rename_fail">重命名失败</string>
+    <string name="no_update_version">当前已是最新版本</string>
+    <string name="not_updated">暂不更新</string>
+    <string name="update_now">立即更新</string>
+    <string name="empty">空空如也</string>
+    <string name="save">保存</string>
+    <string name="sync_next_time">下次再说</string>
+    <string name="sync_right_now">立即同步</string>
+    <string name="sync">同步</string>
+    <string name="pls_select_notebook_tips">请选择笔记本</string>
+    <string name="select_all">全部选择</string>
+    <string name="fail">失败</string>
+    <string name="success">成功</string>
+
+    <!--安卓系统授权-->
+    <string name="dialog_permission_tips">为了应用能正常使用，需要获取SD卡读写权限、位置权限、麦克风权限</string>
+
+    <!--离线数据-->
+    <string name="dialog_title_offline_data_discover">发现离线数据</string>
+    <string name="offline_data_preview">离线数据预览</string>
+    <string name="selected_books">%1$d本已选择</string>
+    <string name="slecte_notebook_to_sync">请选择笔记本进行离线数据同步</string>
+    <string name="confirm_create_notebook">当前无笔记本，是否创建笔记本</string>
+    <string name="slecte_page_to_sync">请选择页码是%d的离线数据</string>
+    <string name="pls_select_offline_data">请选择离线数据</string>
+    <string name="dialog_msg_synchronized_offline_data_timeout">同步离线数据超时</string>
+    <string name="bt_connect_timeout">蓝牙连接超时</string>
+    <string name="title_retry">重试</string>
+    <string name="analyzing_offline_data">正在分析处理离线数据...</string>
+
+
+    <string name="install_apk_path">com.eningqu.smartpen</string>
+    <string name="bluetooth_not_support">该设备不支持蓝牙</string>
+    <string name="device_name">蓝牙搜索</string>
+    <string name="device_fund">搜索到设备</string>
+
+    <string name="next_step">下一步</string>
+    <string name="scan">搜索</string>
+    <string name="exit_tips">再按一次退出应用程序</string>
+    <string name="blue_connecting">正在连接[%1$s]</string>
+    <string name="blue_discovering">蓝牙搜索中...</string>
+    <string name="blue_connect_success">蓝牙连接成功</string>
+    <string name="blue_connect_fail">蓝牙连接失败</string>
+    <string name="blue_connect_discontinue">蓝牙连接中断</string>
+    <string name="bluetooth_close">手机蓝牙已关闭</string>
+    <string name="bluetooth_open">手机蓝牙已开启</string>
+    <string name="bluetooth_not_fund">未搜索到蓝牙，请查看蓝牙是否已打开</string>
+    <string name="update_version_tips">可更新至新版本</string>
+    <string name="advertising">广告要来啦</string>
+    <string name="location_tips">GPS未开启，是否马上设置？</string>
+    <string name="dialog_setting_text">设置</string>
+
+    <string name="menu_hand_reco">手写识别</string>
+    <string name="hand_reco_tran">识别翻译</string>
+    <string name="tran_original">原文</string>
+    <string name="tran_translation">翻译</string>
+    <string name="notes_clean">删除</string>
+    <string name="str_record">录音</string>
+    <string name="menu_records">播放录音</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_lock_collect">上锁收藏</string>
+    <string name="menu_unlock">解锁</string>
+    <string name="menu_delete">删除</string>
+
+    <string name="login_QQ">QQ</string>
+    <string name="login_Wechet">WeChet</string>
+    <string name="login_SinaWeibo">SinaWeibo</string>
+    <string name="share_to_format">分享到%s</string>
+    <string name="share_to_wechat_not_support">暂不支持分享文件到朋友圈</string>
+    <string name="qq_version_not_install">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="share_to_qzone_not_support">暂不支持分享文件到QQ空间</string>
+    <string name="share_to_youtube_not_support">暂不支持分享文件到Youtube</string>
+    <string name="share_to_weibo_not_support">暂不支持分享文件到微博</string>
+
+    <string name="format_jpg">图片</string>
+    <string name="format_pdf">PDF</string>
+
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+    <string name="delete_success">已删除</string>
+    <string name="dialog_title_delete_notebook">删除笔记本</string>
+    <string name="dialog_title_lock_notebook">上锁收藏笔记本</string>
+    <string name="collect">收藏</string>
+    <string name="collect_success">收藏成功</string>
+    <string name="collected_canot_modif">已收藏，不能编辑</string>
+    <string name="collect_fail_empty">空笔记本不能收藏</string>
+    <string name="unlock_success">解锁成功</string>
+    <string name="unlock_fail">解锁失败</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="collect_fail">收藏失败</string>
+    <string name="label_is_empty">页签不能为空</string>
+    <string name="confirm_collect_text">笔记本一经收藏,所有数据将不能再次修改,请确认是否收藏?</string>
+    <string name="confirm_delete_page_text">确定删除本页数据吗?</string>
+    <string name="ble_history_data_delete">离线数据清除中...</string>
+    <string name="ble_history_data_receive">接收离线数据中,不能进行实时书写%1$d%%</string>
+    <string name="processing_offline_data">正在分析处理离线数据...</string>
+    <string name="processing_hw_recognition">识别中...</string>
+
+    <string name="label_hint_text">页签搜索</string>
+    <string name="note_hint_text">输入笔记本名称搜索</string>
+    <string name="label_text">页签</string>
+    <string name="calendar_text">历程</string>
+    <string name="note_text">搜索笔记本</string>
+    <string name="version_info">版本信息</string>
+    <string name="version_update">版本更新</string>
+    <string name="version_name">当前版本</string>
+    <string name="version_lastest">当前已是最新版本</string>
+    <string name="label_save_success">标签保存成功</string>
+    <string name="label_empty_text">当前无页签</string>
+    <string name="label_used_text">已使用页签</string>
+    <string name="note_book_search">搜索笔记本</string>
+    <string name="connect_pen_tips">空笔记本</string>
+    <string name="new_notebook_name">新建笔记本</string>
+    <string name="it_is_first_page">已经是第一页</string>
+    <string name="it_is_last_page">已经是最后一页</string>
+
+    <!--画笔-->
+    <string name="paint_selected_red">已选红色</string>
+    <string name="paint_selected_green">已选绿色</string>
+    <string name="paint_selected_blue">已选蓝色</string>
+    <string name="paint_selected_black">已选黑色</string>
+    <string name="paint_selected_thin_line">已选细线</string>
+    <string name="paint_selected_medium_line">已选中线</string>
+    <string name="paint_selected_thick_line">已选粗线</string>
+    <!--录音-->
+    <string name="recording">开始录音</string>
+    <string name="record_pause">暂停录音</string>
+    <string name="record_restart">恢复录音</string>
+    <string name="record_stop">停止录音</string>
+
+    <string name="login_success">授权登录成功</string>
+    <string name="authorize_qq">QQ登录授权中...</string>
+    <string name="authorize_weixin">微信登录授权中...</string>
+    <string name="authorize_twitter">Twitter登录授权中...</string>
+    <string name="authorize_success">授权成功,登录中...</string>
+    <string name="authorize_fail">授权发生错误</string>
+    <string name="authorize_cancel">授权取消</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+
+    <string name="app_QQ">请安装QQ客户端</string>
+    <string name="app_WeChat">请安装微信客户端</string>
+    <string name="app_Twitter">请安装推特客户端</string>
+    <string name="app_Facebook">请安装FaceBook客户端</string>
+
+    <string name="ble_tips">未连接</string>
+    <string name="no_login">未登录</string>
+    <string name="ble_interrupted_text">蓝牙连接中断,是否重新连接</string>
+    <string name="dialog_confirm_disconnect_ble">蓝牙已连接,是否断开?</string>
+    <string name="dialog_confirm_unbund_ble">蓝牙已绑定,是否解绑?</string>
+
+    <!--授权-->
+    <string name="server_status_tips0">设备可用</string>
+    <string name="server_status_tips1">设备不可用</string>
+    <string name="server_status_tips2">参数错误</string>
+    <string name="server_status_tips3">设备已绑定</string>
+    <string name="server_status_tips4">设备不存在</string>
+    <string name="server_status_tips5">设备未授权</string>
+    <string name="network_error_tip">网络状况不佳，请检查网络</string>
+
+    <!--手写识别-->
+    <string name="hwr_reco_fail">识别失败</string>
+    <string name="hwr_reco_timeout">识别超时</string>
+    <string name="select_lang_title">翻译语言</string>
+    <string name="select_reco_lang_title">识别语言</string>
+    <string name="error_tran">呃，哦~ 翻译失败</string>
+    <string name="page">Business</string>
+
+    <string name="zh_CN">中文-简体</string>
+    <string name="zh_TW">中文-繁体</string>
+    <string name="en_US">英语</string>
+    <string name="ja_JP">日语</string>
+    <string name="diagram">图表</string>
+    <string name="math">数学</string>
+    <string name="raw_content">Raw Content</string>
+
+    <string name="login_show">请选择登录方式</string>
+    <string name="login_twitter_text">Twitter登录</string>
+    <string name="login_facebook_text">Facebook登录</string>
+    <string name="app_login">选择其他登录方式</string>
+    <string name="please_write_tips">请书写</string>
+
+    <string name="wechat_friends">微信好友</string>
+    <string name="wechat_moments">微信朋友圈</string>
+    <string name="qq_friends">QQ好友</string>
+    <string name="qq_zone">QQ空间</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="share_wechat_not_support">暂不支持分享文件到微信朋友圈</string>
+    <string name="share_qq_version_too_low">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="share_qq_zone_not_support">暂不支持分享文件到QQ空间</string>
+    <string name="share_weibo_not_support">暂不支持分享文件到微博</string>
+    <string name="share_facebook_not_support">暂不支持分享文件到Facebook</string>
+    <string name="share_twitter_not_support">暂不支持分享文件到Twitter</string>
+
+    <string name="email_title">标题</string>
+    <string name="running_in_the_background">正在后台运行</string>
+
+    <string-array name="week_str">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <!--参数名-->
+    <string name="note_name">note_name</string>
+    <string name="note_lock">note_lock</string>
+    <string name="note_type">note_type</string>
+    <string name="note_book_id">note_book_id</string>
+    <string name="page_num">page_num</string>
+    <string name="page_id">page_id</string>
+    <string name="is_lock">is_lock</string>
+    <string name="user_agreement_title">用户协议</string>
+    <string name="user_agreement_title2">隐私政策</string>
+    <string name="please_real_write_tips">可以实时书写啦</string>
+    <string name="authorize_facebook">Facebook登录授权中...</string>
+    <string name="jump">跳过</string>
+    <string name="tourist">游客</string>
+    <string name="banben">版本信息</string>
+    <string name="batt_info">电量</string>
+    <string name="offline_data">离线数据</string>
+    <string name="offline_data_clean">清空</string>
+    <string name="unbind">解除绑定</string>
+    <string name="report_log">报告故障</string>
+    <string name="report">报告</string>
+    <string name="report_tips">为了分析故障，需要上传运行日志报告，请确认</string>
+    <string name="delete_history">历史记录删除中...</string>
+    <string name="mycontent">我是内容</string>
+    <string name="facebook">Facebook</string>
+    <string name="wework">企业微信</string>
+    <string name="twitter">Twitter</string>
+    <string name="biness">商务本</string>
+    <string name="user_guide">用户指南</string>
+    <string name="charging">充电中</string>
+
+    <!--<string name="user_guide">"$智能笔（AiPen）使用须知：$
+		||1.配对连接$
+     ||||初次使用智能笔（AiPen）时需要进行蓝牙绑定，绑定前，请到官网或应用平台下载并安装APP，首次使用可参照以下步骤：（注：用户还可在APP中的设定项里解除笔与APP的绑定。）$
+	 ||||蓝牙智能笔长按开关机键5秒直到进入红绿灯交替快闪$
+	 ||||打开APP，点软件右上角的笔图，在弹出的搜索列表中选择智能笔对应的名称，点击连接$
+	 ||||连接成功后，蓝牙智能笔绿灯慢闪，APP软件界面右上角的笔图标会变绿色并且软件有文字提示$
+	 ||||完成配对后，以后每次在APP中点击连接笔的图标，即可实现笔与APP的数据传输和交互，无需再次进入配对$
+	 ||2.专用记录本$
+	 ||||a）配对连接成功后就可以在专用本子上进行书写了。$
+	 ||||b) 建议您同一时间段只使用一个同样类型的本（判断方法：长得一模一样的本子都是同一类型），当前本写完后先收藏，然后再使用新本进行书写。$
+	 ||3.书写角度$
+	 ||||智能笔笔头部分包含摄像头组件，正常持笔姿势（笔尖与水平纸面之间夹角在45°——60°之间）书写效果为最佳，如倾斜角度过大或过小或将笔尖书写面反转朝上都将影响书写效果。如遮挡摄像头将无法在软件中呈现书写笔迹。$
+	 ||||操作与指示一览表$$
+     ||||||1.       开机       长按2-3秒       绿灯闪三下开机成功$
+	 ||||||2.       配对       长按开机键5秒以上进入配对模式       红绿灯交替快闪$
+	 ||||||3.       关机       长按5秒以上       红灯闪三下松开即可$
+     ||||||4.       连接中待机       连接上APP       绿灯慢闪（工作中约1次/1S）$
+	 ||||||5.       脱机       设备连接断开       绿灯两两快闪$
+	 ||||||6.       重连       打开APP点击右上角图标       无指示$
+	 ||||||7.       书写       专用纸上书写       绿灯不停闪动$
+	 ||||||8.       存储有历史数据       开机绿灯闪三下后       绿灯连续快闪10S，超时自动关闭$
+	 ||||||9.       充电       充电线连接USB接口5V充电       红灯长亮/充满灯熄$
+	 ||||||10.     电压低电量报警      无       红灯不停闪$
+	 ||||||11.      电池电量显示       连接APP       显示电池电量（单位：%）$
+	 ||||||12.      历史数据传输中       连接APP       绿灯快闪$
+	 ||||||13.      历史数据传输完成       连接APP       绿灯慢闪$
+	 ||||||14.      删除历史数据      连接APP       绿灯长亮2秒后闪一次，两个循环$
+	 ||||规格参数一览表$
+	 ||||||名  称              规      格$
+	 ||||||蓝牙版本           V 4.1$
+	 ||||||频率                 2.402GHZ—2.480GHZ$
+	 ||||||速度                 66FPS$
+	 ||||||电池                 聚合物 3.7V  200mAh$
+	 ||||||使用时间           约8小时      $
+     ||||||支持兼容语言     图形点阵$
+     ||||||存储器              128M（8小时连续书写）$
+     ||||||指示灯              2个（红绿）$
+     ||||||功能按键数量     1个$
+	 ||||||充电数据读取     MICRO USB$
+     ||||||在线书写           66fps$
+     ||||||离线书写           66fps$
+	 ||||||离线存储           66fps$    低电量报警        3.15V$
+	 ||||||充电指示           200mA$
+	 ||||||兼容手机           Android4.0 up （ble 4.0）IOS 9.3 UP$
+	 ||||||SIZE                   166*14*17MM"</string>-->
+    <string name="collect_success_msg">已连接设备，请断开再连接</string>
+    <string name="ble_history_data_receive_over">历史数据接收完成</string>
+    <string name="no_page">当前日期没有记录</string>
+    <string name="tishi">已选择商务本风格!</string>
+    <string name="tishi1">已选择休闲本风格!</string>
+    <string name="login_faild">登录失败</string>
+    <string name="note_time">note_time</string>
+    <string name="ble_refresh">正在查找蓝牙</string>
+    <string name="history_books">历史笔记</string>
+    <string name="history_empty">空空如也</string>
+    <string name="developing">正在开发中...</string>
+
+    <string name="str_alabo_aiji">阿拉伯语(埃及)</string>
+    <string name="str_alabo_shate">阿拉伯语(沙特阿拉伯)</string>
+    <string name="str_alabo_alianqiu">阿拉伯语(阿联酋)</string>
+    <string name="str_alabo_yiselie">阿拉伯-以色列</string>
+    <string name="str_alabo_yuedan">阿拉伯-约旦</string>
+    <string name="str_alabo_balin">阿拉伯-巴林</string>
+    <string name="str_alabo_aman">阿拉伯-阿曼</string>
+    <string name="str_alabo_aerjiliya">阿拉伯-阿尔及利亚</string>
+    <string name="str_alabo_balesitan">阿拉伯-巴勒斯坦</string>
+    <string name="str_alabo_yilake">阿拉伯-伊拉克</string>
+    <string name="str_alabo_keweite">阿拉伯-科威特</string>
+    <string name="str_alabo_kataer">阿拉伯-卡塔尔</string>
+    <string name="str_alabo_mologe">阿拉伯-摩洛哥</string>
+    <string name="str_alabo_tunisi">阿拉伯-突尼斯</string>
+    <string name="str_alabo_libanen">阿拉伯-黎巴嫩</string>
+    <string name="str_jiatailuoniya">加泰罗尼亚语(安道尔)</string>
+    <string name="str_jianke">捷克语(捷克)</string>
+    <string name="str_de">德语</string>
+    <string name="str_en_au">英语(澳大利亚)</string>
+    <string name="str_en_en">英语(英国)</string>
+    <string name="str_en_us">英语(美国)</string>
+    <string name="str_en_yin">英语(印度)</string>
+    <string name="str_en_canada">英语-加拿大</string>
+    <string name="str_en_nzl">英语-新西兰</string>
+    <string name="str_en_gn">英语-加纳</string>
+    <string name="str_en_aerlan">英语-爱尔兰</string>
+    <string name="str_en_kenniya">英语-肯尼亚</string>
+    <string name="str_en_niriliya">英语-尼日利亚</string>
+    <string name="str_en_feiliben">英语-菲律宾</string>
+    <string name="str_en_nanfei">英语-南非</string>
+    <string name="str_en_tansan">英语-坦桑尼亚</string>
+    <string name="str_es_es">西班牙语(西班牙)</string>
+    <string name="str_es_lading">西班牙语(拉丁</string>
+    <string name="str_es_agenting">西班牙-阿根廷</string>
+    <string name="str_es_boliweiya">西班牙-玻利维亚</string>
+    <string name="str_es_zhili">西班牙-智利</string>
+    <string name="str_es_saerwaduo">西班牙-萨尔瓦多</string>
+    <string name="str_es_weidimala">西班牙-危地马拉</string>
+    <string name="str_es_gelunbiya">西班牙-哥伦比亚</string>
+    <string name="str_es_gesidalijia">西班牙-哥斯达黎加</string>
+    <string name="str_es_erguaduoer">西班牙-厄瓜多尔</string>
+    <string name="str_es_usa">西班牙-美国</string>
+    <string name="str_es_hongdu">西班牙-洪都拉斯</string>
+    <string name="str_es_mxg">西班牙-墨西哥</string>
+    <string name="str_es_njlg">西班牙-尼加拉瓜</string>
+    <string name="str_es_banama">西班牙-巴拿马</string>
+    <string name="str_es_balagui">西班牙-巴拉圭</string>
+    <string name="str_es_bilu">西班牙-秘鲁</string>
+    <string name="str_es_boduolige">西班牙-波多黎各</string>
+    <string name="str_fin">芬兰语</string>
+    <string name="str_fr_ca">法语(加拿大)</string>
+    <string name="str_fr_fr">法语(法国)</string>
+    <string name="str_yindi">印地语</string>
+    <string name="str_keluodiya">克罗地亚语</string>
+    <string name="str_hu">匈牙利语(匈牙利)</string>
+    <string name="str_yindunixiya">印尼语</string>
+    <string name="str_yidali">意大利语(意大利)</string>
+    <string name="str_xibolai">希伯来语(以色列)</string>
+    <string name="str_ja">日语</string>
+    <string name="str_ko">韩语</string>
+    <string name="str_helan">荷兰语</string>
+    <string name="str_helan_za">荷兰-南非</string>
+    <string name="str_no">挪威语</string>
+    <string name="str_pl">波兰语</string>
+    <string name="str_pt">葡萄牙语(葡萄牙)</string>
+    <string name="str_pt_ba">葡萄牙语(巴西)</string>
+    <string name="str_pt_luoma">罗马尼亚</string>
+    <string name="str_ru">俄罗斯语</string>
+    <string name="str_sk">斯洛伐克语</string>
+    <string name="str_sv">瑞典语</string>
+    <string name="str_thai">泰语</string>
+    <string name="str_tur">土耳其语</string>
+    <string name="str_vi">越南语</string>
+    <string name="str_zh_cn">中文(简体)</string>
+    <string name="str_zh_hk">中文(繁体)</string>
+    <string name="str_zh_yue">中文(粤语)</string>
+    <string name="str_dm">丹麦语</string>
+    <string name="str_el">希腊语</string>
+    <string name="str_uk">乌克兰语</string>
+    <string name="str_my">马来西亚语</string>
+
+    <string name="str_myscrpit_error">手写识别初始化失败</string>
+    <string name="str_format_time">MM月dd日 HH:mm</string>
+    <string name="str_format_course">MM月，yyyy</string>
+    <string name="str_bind">绑定</string>
+    <string name="confirm_delete_text">删除后,将无法恢复,你真的要删除吗?</string>
+    <string name="str_offline_page_num">已接收%1$d页离线数据，请同步保存</string>
+    <string name="str_delete_record_title">删除录音</string>
+    <string name="confirm_delete_record">删除录音不可恢复，请确认。</string>
+    <string name="str_unbinded">已解除绑定</string>
+    <string name="str_clean_content">离线数据清空后无法恢复，确定要删除吗？</string>
+    <string name="offline_data_clean_finish" translatable="false">已删除！</string>
+    <string name="str_sync_finish">在你离开期间，已获取到离线数据，是否继续同步？</string>
+    <string name="str_translateing">翻译中</string>
+    <string name="str_record_null">无识别结果</string>
+    <string name="str_sync">同步离线数据</string>
+    <string name="str_no_email">没有找到电子邮箱</string>
+    <string name="str_network_error">网络异常</string>
+    <string name="str_network_error2">网络异常，请重试</string>
+
+    <string name="str_permission_hint">您也可以在系统中关闭授权，可能影响到部分功能的正常使用.</string>
+    <string name="str_permission_local">定位</string>
+    <string name="str_permission_local_content">扫描低功率蓝牙BLE设备，应用需要拥有访问 设备位置的权限.</string>
+    <string name="str_permission_storage">存储</string>
+    <string name="str_permission_storage_content">缓存笔记和音频，降低流量消耗.</string>
+    <string name="str_permission_audio">麦克风</string>
+    <string name="str_permission_audio_content">为您提供了录音等功能</string>
+    <string name="str_permission_sure">知道了</string>
+
+    <string name="recognize_af_za">南非语-南非</string>
+    <string name="recognize_sq_al">阿尔巴尼亚语-阿尔巴尼亚</string>
+    <string name="recognize_hy_am">亚美尼亚语-亚美尼亚</string>
+    <string name="recognize_az_az">阿塞里-阿塞拜疆</string>
+    <string name="recognize_eu_es">巴斯克-西班牙</string>
+    <string name="recognize_be_by">白俄罗斯语-白俄罗斯</string>
+    <string name="recognize_bg_bg">保加利亚-保加利亚</string>
+    <string name="recognize_ca_es">加泰罗尼亚-西班牙</string>
+    <string name="recognize_zh_cn">中文简体</string>
+    <string name="recognize_zh_hk">中文粤语</string>
+    <string name="recognize_zh_tw">中文繁体</string>
+    <string name="recognize_hr_hr">克罗地亚语-克罗地亚</string>
+    <string name="recognize_cs_cz">捷克-捷克共和国</string>
+    <string name="recognize_da_dk">丹麦-丹麦</string>
+    <string name="recognize_nl_be">荷兰-比利时</string>
+    <string name="recognize_nl_nl">荷兰-荷兰</string>
+    <string name="recognize_en_ca">英语-加拿大</string>
+    <string name="recognize_en_gb">英语-英国</string>
+    <string name="recognize_en_us">英语-美国</string>
+    <string name="recognize_et_ee">爱沙尼亚语-爱沙尼亚</string>
+    <string name="recognize_fi_fi">芬兰-芬兰</string>
+    <string name="recognize_fr_ca">法国-加拿大</string>
+    <string name="recognize_fr_fr">法国-法国</string>
+    <string name="recognize_gl_es">加利西亚语-西班牙</string>
+    <string name="recognize_ka_ge">乔治亚州-乔治亚州</string>
+    <string name="recognize_de_at">德国-奥地利</string>
+    <string name="recognize_de_de">德国-德国</string>
+    <string name="recognize_el_gr">希腊-希腊</string>
+    <string name="recognize_hu_hu">匈牙利语-匈牙利</string>
+    <string name="recognize_is_is">冰岛语-冰岛</string>
+    <string name="recognize_id_id">印度尼西亚语-印度尼西亚</string>
+    <string name="recognize_ga_ie">爱尔兰-爱尔兰</string>
+    <string name="recognize_it_it">意大利语-意大利</string>
+    <string name="recognize_ja_jp">日语-日本</string>
+    <string name="recognize_kk_kz">哈萨克-哈萨克斯坦</string>
+    <string name="recognize_ko_kr">韩文-韩国</string>
+    <string name="recognize_lv_lv">拉脱维亚-拉脱维亚</string>
+    <string name="recognize_lt_lt">立陶宛语-立陶宛</string>
+    <string name="recognize_mk_mk">马其顿语-马其顿</string>
+    <string name="recognize_ms_my">马来语-马来西亚</string>
+    <string name="recognize_mn_mn">蒙古-蒙古</string>
+    <string name="recognize_no_no">挪威语-挪威</string>
+    <string name="recognize_pl_pl">波兰语-波兰</string>
+    <string name="recognize_pt_br">葡萄牙语-巴西</string>
+    <string name="recognize_pt_pt">葡萄牙语-葡萄牙</string>
+    <string name="recognize_ro_ro">罗马尼亚语-罗马尼亚</string>
+    <string name="recognize_ru_ru">俄语-俄罗斯</string>
+    <string name="recognize_cyrl">塞尔维亚（西里尔文）-塞尔维亚</string>
+    <string name="recognize_latn">塞尔维亚语（拉丁语）-塞尔维亚</string>
+    <string name="recognize_sk_sk">斯洛伐克-斯洛伐克</string>
+    <string name="recognize_sl_si">斯洛文尼亚语-斯洛文尼亚</string>
+    <string name="recognize_es_mx">西班牙语-墨西哥</string>
+    <string name="recognize_es_es">西班牙语-西班牙</string>
+    <string name="recognize_sv_se">瑞典-瑞典</string>
+    <string name="recognize_tt_ru">塔塔尔-俄罗斯</string>
+    <string name="recognize_tr_tr">土耳其语-土耳其</string>
+    <string name="recognize_uk_ua">乌克兰语-乌克兰</string>
+    <string name="recognize_vi_vn">越南-越南</string>
+
+    <string name="recognize_undownload">请先下载相关资源</string>
+    <string name="recognize_download_failed">下载失败，请重试</string>
+    <string name="recognize_download_resoures">请先下载适用的语言包</string>
+    <string name="pen_error">连接的笔异常，请重试</string>
+    <string name="test_page">测试页</string>
+
+    <string name="str_agree">同意</string>
+    <string name="str_unagree">暂不使用</string>
+    <string name="str_agree_content1">请你务必审慎阅读、充分理解“用户协议”和“隐私政策”各项条款，包括但不限于：为了向你提供蓝牙数据传输、数据保存、音频保存、内容分享等服务，我们需要收集你的设备信息、操作日志等个人信息。你可以在“设置”中查看、变更、删除个人信息并管理你的授权。\n你可阅读</string>
+    <string name="str_agree_content2">了解详细信息。如你同意，请点击“同意”开始接受我们的服务。</string>
+    <string name="str_agree_sure">《用户协议》</string>
+    <string name="str_agree_sure2">《隐私政策》</string>
+    <string name="str_add">和</string>
+
+    <string name="user_agreement_title_all">用户协议和隐私政策</string>
+
+    <string name="str_no_recogine">请规范书写</string>
+    <string name="str_try_again">是否重新尝试？</string>
+    <string name="str_trans_timeout">翻译超时</string>
+    <string name="str_no_trans">无翻译结果</string>
+    <string name="str_linked_title">未连接</string>
+    <string name="dialog_clear_offline_yes">已删除！</string>
+    <string name="load_ing">加载中</string>
+
+</resources>

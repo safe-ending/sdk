@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_white"
+        android:orientation="vertical">
+
+        <include layout="@layout/tpl_top_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="67dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colors_menu_black"
+            android:textSize="19sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/version_name"
+                android:textColor="@color/colors_menu_black" />
+
+            <TextView
+                android:id="@+id/tv_version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="1.0.0" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/app_setting_line_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_version_update"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="onViewClick"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/version_update"
+                android:textColor="@color/colors_menu_black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/app_setting_line_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_version_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#999999" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_log_switch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="onViewClick"
+                android:textColor="#999999" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_display_page"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="onViewClick"
+                android:textColor="#999999" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CaiYunSDK</string>
+    <string name="app_name_welcome">CaiYunSDKスマートペン</string>
+    <string name="str_permission_title">スムーズなライティングエクスペリエンスを実現するために、QPenスマートペンは次のアクセス許可を申請する必要があります。</string>
+
+    <string name="menu_title_mcloud">生成笔记</string>
+</resources>

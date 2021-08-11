@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_side_bottom_gray"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextAppearance="@style/Toolbar.TitleText">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_toolbar_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:background="@drawable/shape_search_black_bg">
+
+                    <TextView
+                        android:id="@+id/tv_search_note_name"
+                        android:layout_width="230dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_search_black_trans_bg"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:hint="@string/note_text"
+                        android:onClick="onViewClick"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/color_000000"
+                        android:textColorHint="#c5c5c5"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_search"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/tv_search_note_name"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="11dp"
+                            android:layout_height="11dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/icon_search_normal" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_toolbar_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:visibility="gone"
+                    android:background="@drawable/shape_edit_rect_black_bg">
+
+                    <TextView
+                        android:id="@+id/tv_page_label"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_edit_rect_black_bg"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:hint="@string/dialog_edit_tips"
+                        android:onClick="onViewClick"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/color_000000"
+                        android:textColorHint="#c5c5c5"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:onClick="onViewClick"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                android:scaleType="center"
+                android:src="@drawable/icon_more"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_bt_state"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_gravity="right|center_vertical"
+                android:onClick="onViewClick"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+</layout>

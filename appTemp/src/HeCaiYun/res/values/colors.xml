@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_login_text_black">#333333</color>
+    <color name="app_hwr_tran_bottom">#ff01c596</color>
+    <color name="app_click_btn_color">#02C2A0</color>
+    <color name="app_tips_text">#01C0A1</color>
+    <color name="app_click_text_green">#30CDB4</color>
+    <color name="app_text_gray_color">#50000000</color>
+    <color name="app_login_name_text_color">#AD000000</color>
+    <color name="app_login_btn_normal_color">#6688FF</color>
+    <color name="app_login_btn_pressed_color">#A9BAFF</color>
+    <color name="app_exit_btn_normal_color">#999999</color>
+    <color name="app_exit_btn_pressed_color">#D0D0D0</color>
+</resources>

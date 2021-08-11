@@ -1,0 +1,21 @@
+# Created by .ignore support plugin (hsz.mobi)
+### ignore-handler template
+# Created by .ignore support plugin (hsz.mobi)
+### wtjt emplate
+*.iml
+.gradle
+gradlew
+gradlew.bat
+/gradle
+/local.properties
+*.apk
+.idea
+.DS_Store
+/build
+/gpen
+/captures
+.externalNativeBuild
+/tmpmob
+
+/myscript/build/
+/pensdk/build/

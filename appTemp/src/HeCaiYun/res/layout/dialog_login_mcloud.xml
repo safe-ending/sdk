@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/ll_zn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="您正在通过和彩云生成笔记，请先绑定和彩云账号" />
+
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tips"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_input_white"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_input_veri_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_mobile">
+
+                <EditText
+                    android:id="@+id/et_veri_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_input_white_corner"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/tv_veri_code"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_btn_blue"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/white_F5F5F5" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/ll_input_veri_code"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_btn_blue_corner"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="绑 定"
+                android:textColor="@color/white_F5F5F5"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

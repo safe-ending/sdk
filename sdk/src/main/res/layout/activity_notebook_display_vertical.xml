@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include android:id="@+id/include_top_bar"
+            layout="@layout/tpl_top_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--  <GridView
+              android:id="@+id/gv_note_book"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:numColumns="2"
+              android:background="#c9c9c9"
+              android:stretchMode="columnWidth"
+              android:scrollbars="none"
+              android:gravity="center"
+              android:listSelector="@null"
+              />-->
+        <TextView android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="text"
+            android:textColor="@color/app_hint_text"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</layout>

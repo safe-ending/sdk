@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/logo" />
+
+        <LinearLayout android:id="@+id/ll_input_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/iv_logo">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="+86"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/login_name_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/loding_input_box"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+        <!--获取短信验证码按钮-->
+
+        <Button
+            android:id="@+id/btn_sms_veri_code"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/ll_input_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="@drawable/selector_btn_blue"
+            android:text="获取短信验证码"
+            android:textColor="@color/white_F5F5F5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/ll_input_account"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/login_name_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loding_input_box"
+                android:hint="请输入短信验证码"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/regester_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注册"
+                    android:textColor="@color/app_text_gray_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/forget_pwd_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="忘记密码"
+                    android:textColor="@color/app_text_gray_color"
+                    android:textSize="@dimen/text_size_14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/selector_btn_blue"
+                    android:text="登录"
+                    android:textColor="@color/white_F5F5F5" />
+
+                <Button
+                    android:id="@+id/exit"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/selector_exit_btn"
+                    android:text="退出"
+                    android:textColor="@color/white_F5F5F5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="55dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/loding_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他登陆方式"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/loding_line_left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1.5" />
+
+                <LinearLayout
+                    android:id="@+id/ll_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/facebook_icom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Facebook"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_qq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/qq_icom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="QQ"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/twitter_icom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Twitter"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_weichat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/wechat_icom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="微信"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

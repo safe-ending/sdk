@@ -1,0 +1,159 @@
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    appKey "245d52e6cae00"
+    appSecret "c01e695bd3ec28f67a95199644fa76a3"
+    version "v3.1.4"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            SinaWeibo {
+                id 1
+                sortId 1
+                appKey "4081943119"
+                appSecret "36d6d45a39fdcdd37b300164e22824df"
+                callbackUri "http://www.sina.com"
+                shareByAppClient true
+                enable true
+            }
+
+            /* Wechat微信和WechatMoments微信朋友圈的appid是一样的；
+
+            注意：开发者不能用我们这两个平台的appid,否则分享不了
+            微信测试的时候，微信测试需要先签名打包出apk,
+            sample测试微信，要先签名打包，keystore在sample项目中，密码123456
+
+            BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过
+            审核的应用也可以执行分享，但是仅限于分享文字和图片，不能分享其他类型，
+            默认值为false。此外，微信收藏不支持此字段。wx4868b35061f87885
+            <!--要分享微信小应用程序时用userName,path-->*/
+            Wechat {
+//                id 2
+//                sortId 2
+                appId "wxe4621d13435d4127"
+                appSecret "b65994421168321ab38111dfa60c5e58"
+                path "pages/index/index.html?id=1"
+                bypassApproval false
+                enable true
+            }
+
+            WechatMoments {
+                id 3
+                sortId 3
+                appId "wxe4621d13435d4127"
+                appSecret "b65994421168321ab38111dfa60c5e58"
+                bypassApproval false
+                enable true
+            }
+
+            QQ {
+                id 4
+                sortId 4
+                appId "1106784881"
+                appKey "jGAoj0zZ2zWohzdv"
+                shareByAppClient true
+                bypassApproval true
+                enable true
+            }
+
+            QZone {
+                id 5
+                sortId 5
+                appId "1106784881"
+                appKey "jGAoj0zZ2zWohzdv"
+                shareByAppClient true
+                bypassApproval true
+                enable true
+            }
+
+            Facebook {
+                id 6
+                sortId 6
+                appKey "224095541481975"
+                appSecret "73147b79a4c27e00d0c07b5474bbaa5a"
+                callbackUri "https://mob.com"
+                shareByAppClient true
+                enable true
+            }
+
+            Twitter {
+                id 7
+                sortId 7
+//old                appKey "GRcOScucmqCoKye4nOmrkUstY"
+//old                appSecret "1DPxpCTv1maXxdoWhSCr9b6dVH0OJkqfQ66loGNAkog7qgC89P"
+                appKey "rRN9iv5jeJqMvpuDNpV5U0AQX"
+                appSecret "AI1oHbuTHSIcuwMzGyqcywqdOYHrvnLVVEHdDq4aQBf8vMNEX3"
+                callbackUri "http://mob.com"
+                shareByAppClient true
+                BypassApproval true
+                enable true
+            }
+
+            /*在中国大陆，印象笔记有两个服务器，一个是沙箱（sandbox），一个是生产服务器（china）。
+            一般你注册应用，它会先让你使用sandbox，当你完成测试以后，可以到
+            http://dev.yinxiang.com/support/上激活你的ConsumerKey，激活成功后，修改HostType
+            为china就好了。至于如果您申请的是国际版的印象笔记（Evernote），则其生产服务器类型为
+            “product”。
+
+            如果目标设备上已经安装了印象笔记客户端，ShareSDK允许应用调用本地API来完成分享，但
+            是需要将应用信息中的“ShareByAppClient”设置为true，此字段默认值为false。*/
+            GooglePlus {
+                id 8
+                sortId 8
+                appId "236300675100-am5pm8km7md1memjevq8rl9pg5c4s4b8.apps.googleusercontent.com"
+                callbackUri "http://localhost"
+                shareByAppClient true
+                enable true
+            }
+
+            /*Yixin易信和YixinMoments易信朋友圈的appid是一样的；
+
+            注意：开发者不能用我们这两个平台的appid,否则分享不了
+
+            易信测试的时候需要先签名打包出apk,
+            sample测试易信，要先签名打包，keystore在sample项目中，密码123456
+
+            BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过
+            审核的应用也可以执行分享，但是仅限于分享文字或图片，不能分享其他类型，
+            默认值为false。*/
+            WhatsApp {
+                id 9
+                sortId 9
+                enable true
+            }
+
+            FacebookMessenger {
+                id 10
+                sortId 10
+                appId "107704292745179"
+                enable true
+            }
+
+            Youtube {
+                id 11
+                sortId 11
+                appId "370141748022-bicrnsjfiije93bvdt63dh3728m4shas.apps.googleusercontent.com"
+                appSecret "AIzaSyAO06g-0TDpHcsXXO918a7QE3Zdct2bB5E"
+                callbackUri "http://localhost"
+                shareByAppClient true
+                enable true
+            }
+            Wework {
+                id 60
+                sortId 60
+                appKey "wwfe28bbed9ea2a350"
+                appSecret "D7xR30PX3MOaPKWQ-pWIgvMX-tFLSSDFtgKfgozycmM-PM8uusq2s"
+                agentId "1000002"
+                schema "wwauthfe28bbed9ea2a350000002"
+            }
+
+            Email {
+                id 12
+                sortId 12
+                enable true
+            }
+        }
+    }
+
+}

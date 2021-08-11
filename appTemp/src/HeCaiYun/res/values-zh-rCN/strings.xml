@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CaiYunSDK</string>
+    <string name="notebook_empty">笔记本里没有内容，请连接智能笔书写</string>
+    <string name="connect_guide">1.拔开笔帽智能笔自动开机</string>
+    <string name="connect_guide2">2.智能笔靠近手机搜索蓝牙</string>
+    <string name="app_name_welcome">QPen智能笔</string>
+    <string name="pen_setting">智能笔名称</string>
+    <string name="note_add_tips">请连接智能笔</string>
+    <string name="bind_ble_text">当前没有绑定智能笔,是否进行绑定</string>
+    <string name="str_pen_unbind">智能笔失去连接</string>
+    <string name="bangding">智能笔名称</string>
+    <string name="batt_alarm">智能笔电量低%1$d,请及时充电</string>
+
+    <string name="str_permission_title">为了给您带来流畅的书写体验，QPen智能笔需要向您申请以下权限:</string>
+    <string name="str_linked_content">请先连接智能笔</string>
+
+    <string name="menu_title_mcloud">生成笔记</string>
+</resources>
